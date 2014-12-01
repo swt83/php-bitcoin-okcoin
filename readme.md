@@ -2,8 +2,6 @@
 
 A PHP library for working w/ the OKCoin API.
 
-The tools provided by OKCoin are not sufficient. There is no reliable stop or stoploss features, not are their sufficient market order features. This library allows me to write my own scripts to handle these needs in a more satisfactory way.
-
 ## Install
 
 Normal install via Composer.
@@ -15,7 +13,10 @@ Call the desired method and pass all parameters as a single array:
 ```php
 use Travis\OKCoin;
 
-$test = OKCoin::test(array(
-
+$ticker = OKCoin::future_ticker(array(
+	'symbol' => 'btc_usd',
+	'contract_type' => 'this_week',
 ));
 ```
+
+See the [documentation](https://www.okcoin.com/about/rest_api.do) for a list of available methods.
