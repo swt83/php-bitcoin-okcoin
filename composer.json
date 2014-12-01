@@ -1,7 +1,7 @@
 {
     "name": "travis/okcoin",
     "description": "A PHP library for working w/ the OKCoin API.",
-    "homepage": "https://github.com/swt83/php-btc-okcoin",
+    "homepage": "https://github.com/swt83/php-bitcoin-okcoin",
     "license": "MIT",
     "authors": [
         {
